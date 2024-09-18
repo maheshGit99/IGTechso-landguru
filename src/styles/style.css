@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* common css */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+li {
+  color: #343d48;
+  font-weight: 500;
+}
+section {
+  position: relative;
+}
+
+/* start scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ef9e48;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+/* End scrollbar */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
+}
+.primary_btn {
+  background-color: #fcf2e8;
+  color: #ef9e48;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.common_heading .MuiTypography-body2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: #ef9e48;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Header css */
+.header_section {
+  padding: 10px 0;
+  /* background-color: transparent; */
+  /* box-shadow: none; */
+}
+.header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_menus {
+  flex: 1;
+  margin: auto;
+}
+.header_menus ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_menus ul li a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #02073e;
+  margin: 0 10px;
+}
+.header_toggle {
+  font-size:30px;
+  margin-left: 1rem;
+  display: none;
+}
+.small_header_menus {
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  transform: translateY(-300px);
+  transition: 0.5s all;
+  display: none;
+}
+.small_header_menus ul li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.small_header_menus ul li a {
+  color: #000;
+}
+.small_header_active {
+  transform: translateY(0px);
+}
+
+.navbar_active {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* Banner css */
+.banner_section {
+  padding-top: 5rem;
+  position: relative;
+}
+.banner_section::after {
+  content: "";
+  background: linear-gradient(106.43deg, #e0f5fa -1.4%, #fffde6 100.87%);
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  border-radius: 0 0 70px 0;
+  z-index: 0;
+}
+.banner_wrap {
+  padding: 5rem 0;
+}
+.bannerHeadingBottom {
+  width: 300px;
+  margin-left: auto;
+}
+.banner_search_filed .MuiInputBase-root {
+  background-color: #fff;
+}
+.banner_search_filed fieldset {
+  border: 0;
+}
+.banner_content_wrap {
+  position: relative;
+  z-index: 5;
+}
+.banner_vedio {
+  position: relative;
+  left: -15%;
+}
+.banner_vedio video {
+  height: 400px;
+}
+.banner_right_wrap {
+  position: relative;
+  z-index: 5;
+}
+.banner_layer {
+  position: absolute;
+  right: 0;
+  top: -10%;
+}
+.bannerFrameLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+}
+/* tutorial_review_section css */
+.tutorial_review_section {
+  padding: 4rem 0;
+}
+.tutorial_review_slder .common_card .MuiCard-root {
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+.tutorial_review_slder .center .common_card .MuiCard-root {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+}
+
+/* core_faetures_section css */
+.core_faetures_section {
+  padding: 4rem 0;
+}
+.features_count_card {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 220px;
+  /* width: 100%; */
+  width: 250px;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features_count_card1 {
+  color: #ef9e48;
+}
+.features_count_card2 {
+  color: #ff753a;
+}
+.features_count_card3 {
+  color: #fa578e;
+}
+.features_count_card4 {
+  color: #e682ff;
+}
+.down_arrow_icon {
+  text-align: end;
+}
+.down_arrow_icon button {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+/* design_course_section css */
+.design_course_section{
+  padding: 4rem 0;
+}
+.course_card{
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+.play_btn svg{
+  font-size: 70px;
+
+}
+
+/* price_plan_card css */
+.price_plan_card {
+  padding: 40px;
+  margin-bottom: 1rem !important;
+}
+.price_plan_tabs .MuiTabs-flexContainer {
+  justify-content: center;
+  background-color: #f7f8fb;
+  border-radius: 7px;
+  padding: 7px;
+}
+.price_plan_tabs .MuiTabs-flexContainer .Mui-selected {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.price_plan_tabs .MuiTabs-flexContainer button {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+.MuiTabs-indicator {
+  display: none;
+}
+
+/* free tutorial css */
+.free_tutorial_section {
+  padding: 5rem 0;
+}
+.common_card {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+.common_card .MuiCard-root {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: visible;
+}
+.free_tutorial_slder .owl-stage-outer {
+  margin: 0 -30px;
+}
+.free_turorial_wrap {
+  width: 80%;
+  margin: auto;
+}
+.free_tutorial_slder .center .common_card.MuiCard-root {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+  overflow: visible;
+}
+/* working_process_section css */
+.working_process_section {
+  background: linear-gradient(180deg, #ebf9ff 0%, #f6f6ff 100%);
+  padding: 4rem 0;
+}
+.working_process_content h5 {
+  background-color: #fff;
+  border-radius: 50px;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 500;
+  padding: 10px;
+  position: relative;
+}
+/* .working_process_content h5::after {
+  content: "";
+  background-image: url(/public/assets/icons/arrow-up.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: -220px;
+  top: 0;
+  width: 200px;
+  height: 100%;
+} */
+
+/* faq section css */
+.faq_section {
+  padding: 4rem 0;
+}
+.faq_style .MuiAccordionSummary-expandIconWrapper {
+  transition: 0.4s all ease;
+}
+.faq_style {
+  margin-top: 2rem;
+}
+.faq_style .MuiAccordionSummary-root {
+  flex-direction: row-reverse;
+  gap: 20px;
+  padding: 7px 0;
+}
+.faq_style .MuiAccordionSummary-expandIconWrapper .MuiSvgIcon-root {
+  background-color: #3fdbb1;
+  color: #fff;
+  border-radius: 50px;
+  padding: 3px;
+}
+.faq_style .MuiPaper-root {
+  box-shadow: none;
+}
+.faq_style .MuiAccordionDetails-root {
+  margin-left: 3rem;
+}
+/* StartLearningBanner css */
+.satrt_learn_section {
+  padding: 5rem 0;
+}
+/* Footer css */
+.footer_wrap {
+  border-top: 1px solid #e5ecf4;
+  padding: 3rem 0;
+}
+.footer_menus_wrap ul li a {
+  color: #02073e;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}

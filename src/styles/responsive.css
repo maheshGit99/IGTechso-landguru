@@ -1,0 +1,86 @@
+/* Screen Resolution Big screen Laptop 1920x1080 Media:- */
+@media only screen and (min-width: 1920px) {
+}
+
+/* For MacBook Pro Laptop 1440x990 Media Query:- */
+@media only screen and (min-width: 1367px) and (max-width: 1649px) {
+}
+
+/* For Small Desktop Screen Resolution 1366x768 Media:- */
+@media only screen and (max-width: 1366px) {
+}
+
+/* For Ipad-Pro devices 1024x1366 Media Query:- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* For Ipad-Pro devices 1024x1366 Media Query:- */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+}
+
+/* For Ipad devices 768x1024 Media Query:- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* For Mobile devices and tablet both Media Query:- */
+@media only screen and (max-width: 991px) {
+}
+
+/* For Mobile devices Media Query:- */
+@media only screen and (max-width: 768px) {
+  .header_menus {
+    display: none;
+  }
+  .arrow_img {
+    display: none;
+  }
+  .banner_section::after {
+    width: 100%;
+  }
+  .banner_layer,
+  .bannerFrameLayer {
+    display: none;
+  }
+  .features_count_card {
+    width: 100%;
+  }
+  .down_arrow_icon {
+    text-align: center;
+  }
+  .price_plan_card {
+    padding: 20px;
+  }
+  .banner_vedio {
+    left: 0;
+  }
+  .small_header_menus,
+  .header_toggle {
+    display: block;
+  }
+  .header_right{
+    display: flex;
+    align-items: center;
+  }
+  .header_logo img{
+    width: 100px;
+  }
+}
+/* For Mobile devices Media Query:- */
+@media only screen and (max-width: 500px) {
+  .features_count_card_wrap {
+    flex-wrap: wrap;
+  }
+  .price_plan_cards_wrap {
+    flex-wrap: wrap;
+  }
+  .price_plan_cards_wrap .price_plan_card {
+    margin: 0;
+  }
+  .banner_section {
+    padding-top: 2rem;
+  }
+}
+
+/*Bootstrp 5 xs bearkpoint */
+@media only screen and (max-width: 576px) {
+}
